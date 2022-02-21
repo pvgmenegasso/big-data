@@ -19,20 +19,17 @@ The idea is to spread the rigidly structured SQL data into a NoSQL paradigm and 
 
 ## Project Structure
 
-/
-|[ Root Folder]
+/  
+|[ Root Folder]  
+|  
+|++README.md   
+|  
+|--data/  
+|------|[Contains corpuses of data to test solutions]  
+|------|    
 |
-|**README.md 
-|
-|__data/
-       |[Contains corpuses of data to test solutions]
-       |
-       |
-       |
-       |
-__scripts/
-         |[Contains bash scripts to be used on the project]
-         |
-         |*data_genetator.sh
-         |
-         |
+|--scripts/  
+|---------|[Contains bash scripts to be used on the project]  
+|---------|  
+|---------|++data_genetator.sh  
+|---------|  
