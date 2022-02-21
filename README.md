@@ -31,5 +31,22 @@ The idea is to spread the rigidly structured SQL data into a NoSQL paradigm and 
 |--scripts/  
 |---------|[Contains bash scripts to be used on the project]  
 |---------|  
-|---------|++data_genetator.sh  
 |---------|  
+|---------|  
+|  
+|--src/  
+|-----|--models/  
+|--------------|--open_api/  
+|-------------------------|[Contains yml files that define DTOs for the system]  
+|-------------------------|  
+|-------------------------|++centro_de_distribuicao.yml  
+|-------------------------|  
+|-------------------------|++compra.yml  
+|-------------------------|  
+|-------------------------|++estoque.yml  
+|-------------------------|  
+|-------------------------|++produto.yml  
+|-------------------------|  
+|-------------------------|++QID.yml  
+|-------------------------|  
+|-------------------------|++venda.yml  

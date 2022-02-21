@@ -1,0 +1,25 @@
+#1.1.4.  Compras reais:
+# - entradas previstas (data da compra e a data da entrada)
+
+
+
+openapi: 3.1.2
+info:
+  title: Compra Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    Compra:
+      type: object
+      properties:
+        quantidade: 
+          type: integer
+        data_compra: 
+          type: string
+        data_entrada: 
+          type: string
+        produto_id: 
+          type: integer

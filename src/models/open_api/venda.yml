@@ -1,0 +1,30 @@
+# 1.1.2. Vendas:
+# - Projeção diaria de venda (x dias futuro)
+# - ROT5 / ROT Tevec
+
+openapi: 3.1.2
+info:
+  title: Venda Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    Venda:
+      type: object
+      properties:
+        projecao_de_vendas_por_prazo:
+          type: integer
+          description: "quanto espera vender em x"
+        rot5: 
+          type: float
+          description: "média móvel ajustada das vendas dos últimos 5 dias"
+        rot_tevec: 
+          type: float
+          description: "média móvel ajustada TVEC"
+        prazo: 
+          type: integer
+          description: prazo x a ser calculado em dias
+        produto_id: 
+          type: integer

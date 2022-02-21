@@ -1,0 +1,23 @@
+ # QID
+ #- reposição do QID inicial (falta do estoque na loja no dia inicio)
+ #- reposição do QID caso o estoque chegue em zero (futuro)
+
+
+openapi: 3.1.2
+info:
+  title: QID Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    QID:
+      type: object
+      properties:
+        qid_inicial:
+          type: integer
+        qid_futuro: 
+          type: integer
+        produto_id:
+          type: integer

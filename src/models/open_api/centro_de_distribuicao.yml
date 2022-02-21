@@ -1,0 +1,20 @@
+openapi: 3.1.2
+info:
+  title: CD Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    CD:
+      type: object
+      required:
+        - id
+      properties:
+        nome: 
+          type: string
+        capacidade: 
+          type: integer
+        id:
+          type: integer

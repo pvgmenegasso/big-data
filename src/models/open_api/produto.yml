@@ -1,0 +1,50 @@
+#1.1.1. Produtos:
+#- Prazo acordado (Numero dias produção + Prazo entrega)
+##- Intervalo (o fornecedor nos vista nesses periodos)
+##- Lote minimo (compra minima)
+#- entrega minima (quebrar a sugestão em entregas fracionadas)
+#- tempo maximo do lote
+#- Exceções de entrega do fornecedor (entregas em dias exclusivos)
+#- Periodo de simulação (hoje simula dois Prazos (ou um PRZ mais um Intervalo) e mais numero de dias do estoque de segurança)
+
+  
+openapi: 3.1.2
+info:
+  title: Produto Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    Produto:
+      type: object
+      required:
+        - id 
+        - nome_curto
+        - descricao    
+      properties:
+        id: 
+          type: integer
+          description: "Chave primária do produto"
+        nome_curto:
+          type: string
+          description: "Nome curto do produto"
+        descricao:
+          type: string
+          description: "Descrição do produto"
+        prazo_acordado: 
+          type: integer
+        intervalo: 
+          type: integer
+        lote_minimo:
+          type: integer
+        intrega_minima:
+          type: integer
+        tempo_max_lote:
+          type: integer
+        excecoes:
+          type: x-array-int
+        periodo_simulacao: 
+          type: integer
+

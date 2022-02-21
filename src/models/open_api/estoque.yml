@@ -1,0 +1,22 @@
+#1.1.3.  Estoque:
+# - Estoque inicial na data (dia inicio simulação)
+
+
+
+openapi: 3.1.2
+info:
+  title: Estoque Object
+  version: 1.0.0
+    
+
+
+components:
+  schemas:
+    Estoque:
+      type: object
+      properties:
+        quantidade: 
+          type: integer
+        produto_id: 
+          type: integer
+
